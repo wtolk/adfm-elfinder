@@ -1,0 +1,29 @@
+{
+    "name": "wtolk/adfm-elfinder",
+    "description": "elfinder component for adfm",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wtolk.ru",
+            "email": "web@wtolk.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wtolk\\AdfmElfinder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wtolk\\AdfmElfinder\\Providers\\AdfmElfinderServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "wtolk/adfm": "*",
+        "wtolk/crud": "*"
+    }
+}
