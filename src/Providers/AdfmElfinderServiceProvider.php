@@ -1,6 +1,6 @@
 <?php
 
-namespace Wtolk\Adfm\Providers;
+namespace Wtolk\AdfmElfinder\Providers;
 
 use App\Adfm\Helpers\ImageCache;
 use App\Helpers\Dev;
