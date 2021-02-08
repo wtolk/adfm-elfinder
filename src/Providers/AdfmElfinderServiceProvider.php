@@ -25,7 +25,7 @@ use League\Flysystem\Filesystem;
 use Aws\S3\S3Client;
 use Aws\Laravel\AwsServiceProvider;
 
-class AdfmServiceProvider extends ServiceProvider
+class AdfmElfinderServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
