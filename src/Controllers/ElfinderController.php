@@ -10,10 +10,7 @@ class ElfinderController
 {
     public function elfinder()
     {
-        require '../Helpers/elfinder/autoload.php';
-
-//        \App\Adfm\Helpers\Dev::dd(\config('filesystems.disks.yandex-cloud.filesystem')->disk()->getDriver());
-
+        require __DIR__.'/../Helpers/elfinder/autoload.php';
 
         $client = new S3Client([
             'credentials' => [
@@ -28,8 +25,6 @@ class ElfinderController
         ]);
 
         $filesystem = new Filesystem(new AwsS3Adapter($client, env('YANDEX_STORAGE_BUCKET'), env('YANDEX_STORAGE_FOLDER')));
-
-
 
 
         function access($attr, $path, $data, $volume) {
