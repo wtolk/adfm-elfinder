@@ -24,6 +24,7 @@
     },
     "require": {
         "wtolk/adfm": "*",
-        "wtolk/crud": "*"
+        "wtolk/crud": "*",
+        "barryvdh/elfinder-flysystem-driver": "*"
     }
 }
