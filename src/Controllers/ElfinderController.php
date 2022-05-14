@@ -3,7 +3,8 @@
 namespace Wtolk\AdfmElfinder\Controllers;
 
 use Aws\S3\S3Client;
-use League\Flysystem\AwsS3v3\AwsS3Adapter;
+
+use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use League\Flysystem\Filesystem;
 
 class ElfinderController
@@ -24,7 +25,7 @@ class ElfinderController
 
         ]);
 
-        $filesystem = new Filesystem(new AwsS3Adapter($client, env('YANDEX_STORAGE_BUCKET'), env('YANDEX_STORAGE_FOLDER')));
+        $filesystem = new Filesystem(new AwsS3V3Adapter($client, env('YANDEX_STORAGE_BUCKET'), env('YANDEX_STORAGE_FOLDER')));
 
 
         function access($attr, $path, $data, $volume) {
