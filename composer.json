@@ -9,7 +9,6 @@
             "email": "web@wtolk.ru"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Wtolk\\AdfmElfinder\\": "src/"
